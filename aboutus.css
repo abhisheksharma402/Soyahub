@@ -1,0 +1,74 @@
+.as1{
+    background: url('images/about-us-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 200px;
+}
+
+.as1 h1{
+    font-size: 4em;
+}
+
+
+
+.as2{
+    padding: 80px;
+}
+
+.as2 .content{
+    padding: 120px;
+    padding-bottom: 40px;
+    padding-top: 0px;
+    text-align: center;
+    line-height: 2em;
+    font-size: 1em;
+}
+
+
+.as2 .images{
+   display: grid;
+   grid-template-columns: 1fr 0.5fr 1fr;
+   text-align: center;
+}
+
+.images div{
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    font-size: 1.5em;
+    line-height: 2.5em;
+}
+/* .images div hr{
+
+} */
+.images img{
+    height: 50vh;
+    margin: auto;
+    border-radius: 50px;
+}
+
+
+
+@media screen and (max-width: 768px){
+    .as2{
+        padding: 30px;
+    }
+    .as2 .content{
+        padding: 0px;
+        padding-bottom: 30px;
+    }
+    .as2 .images{
+        grid-template-columns: 1fr;
+    }
+    .images div hr{
+        width: 50%;
+        margin: auto;
+    }
+
+        
+    .as1{
+        padding: 75px;
+        text-align: center;
+    }
+}

@@ -1,0 +1,88 @@
+.cs1{
+    background: url('images/restaurant.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 100px;
+    padding-left: 210px;
+    color: #fff;
+    font-size: 3em;
+}
+.map iframe{
+    margin: auto;
+    height: 500px;
+    width: 100%;
+    padding: 20px
+}
+.map img{
+    margin: 20px auto 20px auto;
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+}
+
+.form div h1{
+    margin-bottom: 20px;
+}
+
+.form{
+    background: url('images/about-us-banner.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+}
+
+input[type=text], input[type=email], input[type=tel]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    /* text-align:center; */
+}
+
+
+input[type=submit] {
+    width: 30%;
+    background-color: #ff770f;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+  
+input[type=submit]:hover {
+    background-color: #ff6f00;
+}
+
+.form div {
+    border-radius: 50px;
+    background-color: #f2f2f2;
+    width: 40%;
+    margin: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+@media screen and (max-width: 768px){
+
+    .cs1{
+        text-align: center;
+        padding: 50px;
+    }
+    .map{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .form div {
+        width: 100%;
+    }
+    .form{
+        padding: 20px;
+    }
+}
