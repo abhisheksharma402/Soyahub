@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Navbar */
+body{
+    font-family: 'Berkshire Swash', cursive;
+}
+
+.nav-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+    min-height: 5vh;
+    background-color: #ffffff;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+
+}
+
+.nav-list li{
+    list-style-type: none;
+}
+
+.nav-list li a{
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    color: #000;
+    font-weight: bold;
+}
+
+.nav-list .active a{
+    color: #ff770f;
+}
+
+.nav-list input {
+    background-color: #ff770f;
+    border: 1px solid;
+    padding: 0 10px;
+    border-radius: 5px;
+}
+
+/* .reserve{
+    text-align: center;
+    background-color: #E8562A;
+    color: #fff;
+    cursor: pointer;
+    border-style: solid;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    padding-top: 16px;
+    padding-left: 40px;
+    padding-bottom: 16px;
+    padding-right: 40px;
+    line-height: 1;
+} */
+
+.burger{
+
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+    opacity: 0.5;
+    cursor: pointer;
+    display: none;
+}
+
+.burger div{
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    background-color: #747472;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+
+
+
+/* main content */
+
+.s1{
+    background: url('images/bg1.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 100px 100px 100px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+}
+.grid img{
+    justify-self: center;
+}
+.grid div{
+    justify-self: center;
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+}
+
+
+.grid div h1{
+    font-size: 10em;
+}
+.grid div img, .grid div h1, .grid div h3 {
+    margin-bottom: 20px;
+}
+
+.grid div h3{
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.grid div span{
+    display: inline-block;
+    width: 25%;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #fff;
+}
+
+.left{
+    margin-right: 30px;
+}
+.right{
+    margin-left: 30px;
+}
+
+
+.s2{
+    background: url('images/leaves-bg.png');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.s2div{
+    padding: 150px 170px 200px 170px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.s2div div img
+{
+    width: 100%;
+    height: 70vh;
+}
+.s2div div{
+    margin: 0 30px 0 30px;
+}
+.greeting{
+    line-height: 3em;
+}
+.greeting h5{
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.greeting h3{
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+.greeting h4{
+    margin-bottom: 10px;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+.greeting p{
+    margin-bottom: 30px;
+    line-height: 1.5em;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.greeting a button{
+    border: 0;
+    background-color:#ff770f;
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.5s ease;
+    color: white;
+}
+.greeting a button:hover{
+    margin-top:-20px;
+    transition: 0.5s ease;
+}
+.greeting a i{
+    margin-left: 5px;
+}
+
+.menu{
+    text-align: center;
+    width: 40%;
+    margin: auto;
+    padding: 0 0 140px;
+
+}
+
+.menu img{
+    margin: auto auto 30px auto;
+}
+.menu h1{
+    margin: auto auto 20px auto;
+    font-size: 1.7em;
+}
+.menu h2{
+    margin: auto auto 20px auto;
+    font-family: 'Raleway';
+}
+.menu p{
+    margin: auto auto 20px auto;
+    font-family: 'Raleway';
+    font-weight: bold;
+    line-height: 1.5em;
+
+}
+
+
+.s3{
+    background: url(images/restaurant.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 150px;
+    padding-bottom: 0;
+    position: relative;
+    top: 0;
+    /* height: 200vh; */
+
+}
+
+.menu-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    top:-250px;
+}
+.menu-grid div{
+    border: 0.5px solid #ff770f;
+}
+.menu-grid div img{
+    width: 100%;
+    height: 100%;
+}
+
+.info{
+    text-align: center;
+    padding: 80px 50px 30px 50px;
+    line-height: 2em;
+    background-color: rgb(250, 238, 228);
+}
+.info hr{
+    margin: auto;
+    width: 50%;
+}
+
+.info h1{
+    font-size: 1.7em;
+    margin-bottom: 20px;
+}
+
+.info p{
+    margin-bottom: 20px;
+    font-family: 'Raleway';
+    font-weight:  bold;
+    font-size: 1em;
+}
+.info span{
+    display: inline-block;
+    margin: 20px auto 20px auto;
+    font-size: 1.5em;
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+
+.s3 a button{
+    border: 0;
+    background-color:#ff770f;
+    padding: 20px 40px;
+    border-radius: 50px;
+    font-size: 1em;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s ease;
+    color: white;
+    position: relative;
+    top: -120px;
+}
+.s3 a button:hover{
+    margin-bottom:-20px;
+    transition: 0.5s ease;
+}
+.s3 a i{
+    margin-left: 5px;
+}
+
+
+
+/* footer */
+
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    background: rgb(250, 238, 228);;
+    padding: 30px 200px 30px 200px;
+}
+.footer div{
+    margin-right: 20px;
+}
+.quick-reviews{
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+.quick-reviews p{
+    font-style: italic;
+    line-height: 1.5em;
+    font-family: 'Raleway';
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.footer h3{
+    text-transform: uppercase;
+}
+.footer hr{
+    margin: 10px 0;
+    border: 1px solid rgb(204, 165, 80);
+}
+.contact{
+    font-family: 'Raleway';
+    font-weight: bold;
+}
+.contact a{
+    text-decoration: none;
+    color: #000;
+}
+.contact p{
+    margin-bottom: 10px;
+}
+
+.contact h4{
+    margin-bottom: 10px;
+}
+
+
+
+
+@media screen and (min-width: 769px) and (max-width: 991px){
+    
+    /* .logo img{
+        padding-left:0;
+    } */
+    
+    .nav-list{
+        width:60%;
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+    /* . img{
+        padding-left: 21px;
+    } */
+
+    #nav-header{
+        justify-content: space-between;
+    }
+    .nav-list{
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 15.6vh;
+        /* background: linear-gradient(to right,  #a3a47c, #997503); */
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        transform: translateX(100%); /*move this element out of the device screen width*/
+        transition: transform 0.5s ease;
+    }
+
+    .nav-list li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+
+    .s1{
+        padding: 100px 30px 100px 30px;
+    }
+
+    .grid fork{
+        justify-self: left;
+    }
+    .grid knife{
+        justify-self: right;
+    }
+
+    .grid div h1{
+        font-size: 3em;
+    }
+    .grid div h3 span{
+        display: none;
+    }
+    .grid div img{
+        width: 180px;
+    }
+
+    .s2div{
+        grid-template-columns: 1fr;
+        padding: 50px;
+    }
+
+    .greeting a button{
+        margin-top: 0px;
+        margin-bottom: 30px;
+    }
+
+    .s2div div{
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .s3{
+        padding: 40px;
+        padding-bottom:0;
+    }
+
+    .menu-grid{
+        grid-template-columns: 1fr;
+        padding:0;
+        margin: auto;
+        top: -150px;
+    }
+
+    .img img{
+        width: 75%;
+        height: 100%;
+        /* padding: auto 100px auto 20px; */
+    }
+    .s3 a button{
+        top: -50px;
+    }
+    .footer{
+        grid-template-columns: 1fr;
+        padding: 40px;
+        text-align: center;
+    }
+    .quick-reviews{
+        margin-bottom: 30px;;
+    }
+
+    .brand{
+        margin-right: 130px;
+    }
+
+}
+
+
+
+
+.nav-active{
+    transform: translateX(0);
+}
+
+
+/* animation of links */
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+/* animation of the burger lines to turn them into a cross */
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px, -6px);
+}
