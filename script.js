@@ -19,6 +19,8 @@ function navSlide()
                 link.style.animation = '';
             else 
                 link.style.animation = `navLinkFade 0.5s ease forwards ${index/7 + 0.3}s`;
+            
+            console.log(link.style.animation);
         })
         // toggling the "toggle" class on element with 'burger' class.
         burger.classList.toggle('toggle');
